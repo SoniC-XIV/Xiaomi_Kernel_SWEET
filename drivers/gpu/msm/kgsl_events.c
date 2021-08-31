@@ -61,6 +61,7 @@ const char *prio_to_string(enum kgsl_priority prio)
 static void _kgsl_event_worker(struct kthread_work *work)
 {
 	struct kgsl_event *event = container_of(work, struct kgsl_event, work);
+
 	event->func(event->device, event->group, event->priv, event->result);
 
 	kgsl_context_put(event->context);
