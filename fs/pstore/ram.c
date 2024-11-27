@@ -2,8 +2,8 @@
  * RAM Oops/Panic logger
  *
  * Copyright (C) 2010 Marco Stornelli <marco.stornelli@gmail.com>
- * Copyright (C) 2021 XiaoMi, Inc.
  * Copyright (C) 2011 Kees Cook <keescook@chromium.org>
+ * Copyright (C) 2021 XiaoMi, Inc.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -994,8 +994,10 @@ early_param("ramoops_memreserve", ramoops_memreserve);
 static int __init msm_register_ramoops_device(void)
 {
 	pr_info("msm_register_ramoops_device\n");
+
 	if (platform_device_register(&ramoops_dev))
 		pr_info("Unable to register ramoops platform device\n");
+
 	return 0;
 }
 core_initcall(msm_register_ramoops_device);
