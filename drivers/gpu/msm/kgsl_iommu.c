@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 /* Copyright (c) 2011-2021, The Linux Foundation. All rights reserved.
  * Copyright (c) 2022-2023, Qualcomm Innovation Center, Inc. All rights reserved.
+=======
+/* Copyright (c) 2011-2020, The Linux Foundation. All rights reserved.
+ * Copyright (C) 2021 XiaoMi, Inc.
+ *
+>>>>>>> 758bb7ef50af (Kernel: Xiaomi kernel changes for Redmi Note 10 Pro Android R)
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
  * only version 2 as published by the Free Software Foundation.
